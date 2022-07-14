@@ -2,3 +2,33 @@
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif; }
+
+.banner {
+  width: 100%;
+  height: 38px;
+  background-color: #2736dd;
+  display: flex;
+  align-items: center; }
+  .banner .banner-contant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+    line-height: 9px; }
+    .banner .banner-contant .banner-text {
+      display: flex;
+      color: #fff;
+      flex-direction: column;
+      align-items: center; }
+      .banner .banner-contant .banner-text a {
+        color: #fff; }
+    .banner .banner-contant button {
+      position: absolute;
+      right: 5px;
+      background: none;
+      border: none; }
+      .banner .banner-contant button:hover {
+        background: #434fd3; }
+      .banner .banner-contant button:active {
+        background: #111a7e; }
