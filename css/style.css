@@ -194,15 +194,13 @@ main .product {
     main .product .product-detail .product-price-detail div img {
       width: 96px;
       height: 17px; }
-    main .product .product-detail .product-price-detail div p {
-      padding-top: 0px;
-      padding-left: 20px;
+    main .product .product-detail .product-price-detail div p p {
       font-size: 13px;
       font-weight: bold;
       letter-spacing: 2.5px;
       color: #2736dd; }
-      main .product .product-detail .product-price-detail div p del {
-        color: #8d9294; }
+    main .product .product-detail .product-price-detail div p del {
+      color: #8d9294; }
   main .product .product-detail .product-price-detail p {
     font-family: Chivo ,sans-serif;
     font-size: 14px;
@@ -231,26 +229,24 @@ main .product {
       background: #414bce; }
 
 main .other-trips {
-  border: solid 1px red;
-  height: 850px; }
+  height: 730px; }
   main .other-trips .trip-name-1 {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    border: solid 1px red;
     height: 132px; }
     main .other-trips .trip-name-1 a > img {
       width: 100%;
       height: 132px; }
     main .other-trips .trip-name-1 .mask-trips {
-      margin-right: 15px;
-      top: 1532px;
+      margin-right: 10px;
+      top: 1530px;
       width: -webkit-fill-available;
       height: 66px;
       background-image: linear-gradient(360deg, black, transparent);
       position: absolute; }
     main .other-trips .trip-name-1 .text-trip-name-1 {
-      top: 1532px;
+      top: 1530px;
       position: absolute;
       margin-left: 20px; }
       main .other-trips .trip-name-1 .text-trip-name-1 h3 {
@@ -277,20 +273,19 @@ main .other-trips {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    border: solid 1px red;
     height: 132px; }
     main .other-trips .trip-name-2 a > img {
       width: 100%;
       height: 132px; }
     main .other-trips .trip-name-2 .mask-trips {
-      margin-right: 15px;
-      top: 1671px;
+      margin-right: 10px;
+      top: 1667px;
       width: -webkit-fill-available;
       height: 66px;
       background-image: linear-gradient(360deg, black, transparent);
       position: absolute; }
     main .other-trips .trip-name-2 .text-trip-name-2 {
-      top: 1671px;
+      top: 1667px;
       position: absolute;
       margin-left: 20px; }
       main .other-trips .trip-name-2 .text-trip-name-2 h3 {
@@ -313,24 +308,62 @@ main .other-trips {
         line-height: 1.15;
         letter-spacing: 0.5px;
         color: #fff; }
+  main .other-trips .trip-name-3 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 132px; }
+    main .other-trips .trip-name-3 a > img {
+      width: 100%;
+      height: 132px; }
+    main .other-trips .trip-name-3 .mask-trips {
+      margin-right: 10px;
+      top: 1804px;
+      width: -webkit-fill-available;
+      height: 66px;
+      background-image: linear-gradient(360deg, black, transparent);
+      position: absolute; }
+    main .other-trips .trip-name-3 .text-trip-name-3 {
+      top: 1804px;
+      position: absolute;
+      margin-left: 20px; }
+      main .other-trips .trip-name-3 .text-trip-name-3 h3 {
+        width: 42px;
+        height: 15px;
+        margin: 0 78px 0 0;
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #fff; }
+      main .other-trips .trip-name-3 .text-trip-name-3 h2 {
+        width: 120px;
+        height: 30px;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: italic;
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+        color: #fff; }
   main .other-trips .trip-name-4 {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    border: solid 1px red;
     height: 132px; }
     main .other-trips .trip-name-4 a > img {
       width: 100%;
       height: 132px; }
     main .other-trips .trip-name-4 .mask-trips {
-      margin-right: 15px;
-      top: 1949px;
+      margin-right: 10px;
+      top: 1940px;
       width: -webkit-fill-available;
       height: 66px;
       background-image: linear-gradient(360deg, black, transparent);
       position: absolute; }
     main .other-trips .trip-name-4 .text-trip-name-4 {
-      top: 1949px;
+      top: 1940px;
       position: absolute;
       margin-left: 20px; }
       main .other-trips .trip-name-4 .text-trip-name-4 h3 {
@@ -357,20 +390,19 @@ main .other-trips {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    border: solid 1px red;
     height: 132px; }
     main .other-trips .trip-name-5 a > img {
       width: 100%;
       height: 132px; }
     main .other-trips .trip-name-5 .mask-trips {
-      margin-right: 15px;
-      top: 2088px;
+      margin-right: 10px;
+      top: 2078px;
       width: -webkit-fill-available;
       height: 66px;
       background-image: linear-gradient(360deg, black, transparent);
       position: absolute; }
     main .other-trips .trip-name-5 .text-trip-name-5 {
-      top: 2088px;
+      top: 2078px;
       position: absolute;
       margin-left: 20px; }
       main .other-trips .trip-name-5 .text-trip-name-5 h3 {
@@ -393,43 +425,226 @@ main .other-trips {
         line-height: 1.15;
         letter-spacing: 0.5px;
         color: #fff; }
-  main .other-trips .trip-name-6 {
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: solid 1px red;
-    height: 132px; }
-    main .other-trips .trip-name-6 a > img {
-      width: 100%;
-      height: 132px; }
-    main .other-trips .trip-name-6 .mask-trips {
-      margin-right: 15px;
-      top: 2227px;
-      width: -webkit-fill-available;
-      height: 66px;
-      background-image: linear-gradient(360deg, black, transparent);
-      position: absolute; }
-    main .other-trips .trip-name-6 .text-trip-name-6 {
-      top: 2227px;
-      position: absolute;
-      margin-left: 20px; }
-      main .other-trips .trip-name-6 .text-trip-name-6 h3 {
-        width: 42px;
-        height: 15px;
-        margin: 0 78px 0 0;
+
+section .explore-trips {
+  padding-left: 20px;
+  height: 400px; }
+  section .explore-trips h2 {
+    margin: 20px 0px 20px 0px;
+    transform: rotate(0deg);
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    color: #2736dd; }
+  section .explore-trips div > .card1 > img {
+    margin-bottom: 20px;
+    height: 180px;
+    width: 180px; }
+  section .explore-trips div > .card1 > .cardtext > p {
+    width: 180px;
+    height: 80px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #8a8a8a; }
+  section .explore-trips div > .card1 > .cardtext span p {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: #2736dd; }
+  section .explore-trips div > .card1 > .cardtext span del {
+    color: #8d9294; }
+
+section .inta-section {
+  height: 500px; }
+  section .inta-section h2 {
+    margin: 20px 0px 20px 0px;
+    transform: rotate(0deg);
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    color: #2736dd;
+    margin-left: 50px; }
+  section .inta-section button {
+    margin-top: 30px;
+    width: 197px;
+    height: 43px;
+    color: #2736dd;
+    background: none;
+    border: solid 2px #2736dd;
+    transform: skewX(339deg);
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-left: 50px; }
+    section .inta-section button:hover {
+      color: #fff;
+      transform: skewX(0deg);
+      margin-left: 0px;
+      opacity: 0.8;
+      background-image: linear-gradient(360deg, #414bce, transparent); }
+    section .inta-section button:active {
+      background: #414bce; }
+  section .inta-section div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    justify-content: center;
+    margin-top: 20px; }
+    section .inta-section div img {
+      height: 158px;
+      width: 158px; }
+
+footer {
+  border: solid red 1px;
+  height: 754px;
+  background-image: url(https://source.unsplash.com/random/search=?men-in-trek);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  footer .footer-mask {
+    height: 754px;
+    opacity: 0.3;
+    background-color: #272f33; }
+  footer .moto3 {
+    padding-left: 30px;
+    margin-top: 45px;
+    position: absolute;
+    display: flex;
+    top: 3149px;
+    flex-direction: column; }
+    footer .moto3 .moto-1 {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      footer .moto3 .moto-1 p {
         font-family: Chivo ,sans-serif;
         font-size: 13px;
         font-weight: bold;
         letter-spacing: 2.5px;
-        color: #fff; }
-      main .other-trips .trip-name-6 .text-trip-name-6 h2 {
-        width: 120px;
-        height: 30px;
-        font-family: Roboto;
-        font-size: 26px;
+        color: #fff;
+        padding-left: 20px; }
+    footer .moto3 .moto-2 {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      footer .moto3 .moto-2 p {
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
         font-weight: bold;
-        font-stretch: condensed;
-        font-style: italic;
-        line-height: 1.15;
-        letter-spacing: 0.5px;
+        letter-spacing: 2.5px;
+        color: #fff;
+        padding-left: 20px; }
+    footer .moto3 .moto-3 {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      footer .moto3 .moto-3 p {
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #fff;
+        padding-left: 20px; }
+    footer .moto3 hr {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      margin-right: 30px; }
+  footer .subscription {
+    position: absolute;
+    top: 3482px; }
+    footer .subscription h3 {
+      width: 320px;
+      height: 54px;
+      font-family: Roboto;
+      font-size: 23px;
+      font-weight: bold;
+      font-stretch: condensed;
+      font-style: italic;
+      line-height: 1.17;
+      letter-spacing: 0.5px;
+      color: #fff;
+      padding-left: 30px; }
+    footer .subscription form {
+      display: flex;
+      padding-left: 30px;
+      padding-right: 15px;
+      flex-direction: row;
+      justify-content: space-between; }
+    footer .subscription form > input {
+      height: 50px;
+      background: none;
+      border: none; }
+      footer .subscription form > input::placeholder {
         color: #fff; }
+    footer .subscription form > button {
+      background: none;
+      border: none;
+      color: #fff; }
+    footer .subscription hr {
+      padding-top: 0px;
+      padding-bottom: 10px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      margin-right: 10px;
+      margin-left: 30px; }
+  footer .usefull-list {
+    top: 3621px;
+    position: absolute;
+    padding-left: 30px; }
+    footer .usefull-list ul {
+      padding: 15px 0px;
+      font-family: Chivo;
+      font-size: 13px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 2.5px;
+      color: #fff; }
+      footer .usefull-list ul li {
+        list-style: none; }
+    footer .usefull-list hr {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      margin-right: -225px;
+      margin-left: 0px; }
+  footer .social-copyright {
+    position: absolute;
+    top: 3800px; }
+    footer .social-copyright div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      footer .social-copyright div img {
+        padding-right: 30px;
+        padding-bottom: 40px; }
+    footer .social-copyright p c {
+      width: 254px;
+      height: 14px;
+      margin: 24px 0 0;
+      opacity: 0.5;
+      font-family: Chivo;
+      font-size: 12px;
+      color: #fff; }

@@ -1,8 +1,20 @@
+@mixin headerh2 {
+    margin: 20px 0px 20px 0px;
+    transform: rotate(0deg);
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    color: #2736dd;
+}
+
 @mixin tripbox ($top) {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    border: solid 1px red;
     height: 132px;
 
     a > img {
@@ -11,7 +23,7 @@
     }
 
     .mask-trips {
-        margin-right: 15px;
+        margin-right: 10px;
         top: $top;
         width: -webkit-fill-available;
         height: 66px;
@@ -37,15 +49,94 @@
     }
 
     h2 {
-        width: 120px;
-        height: 30px;
-        font-family: Roboto;
-        font-size: 26px;
-        font-weight: bold;
-        font-stretch: condensed;
-        font-style: italic;
-        line-height: 1.15;
-        letter-spacing: 0.5px;
-        color: #fff;
+        @include texth3(120px, 30px, 26px, 1.15);
     }
+}
+
+@mixin pricecard {
+    margin-bottom: 20px;
+    height: 180px;
+    width: 180px;
+}
+
+@mixin ptext ($ptextcolor) {
+    width: 180px;
+    height: 80px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: $ptextcolor;
+}
+
+@mixin pricetextcolor {
+    p {
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #2736dd;
+    }
+
+    del {
+        color: #8d9294;
+    }
+}
+
+@mixin button ($btnwidth, $btnheight) {
+    margin-top: 30px;
+    width: $btnwidth;
+    height: $btnheight;
+    color: #2736dd;
+    background: none;
+    border: solid 2px #2736dd;;
+    transform: skewX(339deg);
+    margin-left: 10px;
+
+    &:hover {
+        color: #fff;
+        transform: skewX(0deg);
+        margin-left: 0px;
+        opacity: 0.8;
+        background-image: linear-gradient(360deg, rgb(65, 75, 206), transparent);
+    }
+    
+    &:active {
+        background: rgb(65, 75, 206)
+    }
+}   
+
+@mixin mototext {
+    font-family: Chivo ,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: #fff;
+}
+
+@mixin motocard {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+        @include mototext;
+        padding-left: 20px;
+    }
+}
+
+@mixin texth3 ($h3width, $h3height, $h3fontsize, $h3lineheight) {
+    width: $h3width;
+    height: $h3height;
+    font-family: Roboto;
+    font-size: $h3fontsize;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: $h3lineheight;
+    letter-spacing: 0.5px;
+    color: #fff;
 }

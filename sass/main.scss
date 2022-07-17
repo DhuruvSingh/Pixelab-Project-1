@@ -227,18 +227,7 @@ main {
         margin-top: 5px;
         padding: 55px 20px;
 
-        h2 {
-            margin: 20px 0px 20px 0px;
-            transform: rotate(0deg);
-            font-family: Roboto, sans-serif;
-            font-size: 26px;
-            font-weight: bold;
-            font-stretch: condensed;
-            font-style: italic;
-            line-height: 1.15;
-            letter-spacing: 0.5px;
-            color: #2736dd;
-        }
+        h2 { @include headerh2; }
 
         img {
             height: 210px;
@@ -275,16 +264,7 @@ main {
                     }
 
                     p {
-                        padding-top: 0px;
-                        padding-left: 20px;
-                        font-size: 13px;
-                        font-weight: bold;
-                        letter-spacing: 2.5px;
-                        color: #2736dd;
-
-                        del {
-                            color: #8d9294;
-                        }
+                        @include pricetextcolor;
                     }
                 }
                 
@@ -299,27 +279,7 @@ main {
                     color: #272f33;
                 }
 
-                button {
-                    margin-top: 30px;
-                    width: 228px;
-                    height: 43px;
-                    color: #2736dd;
-                    background: none;
-                    border: solid 2px #2736dd;;
-                    transform: skewX(339deg);
-                    margin-left: 10px;
-
-                    &:hover {
-                        color: #fff;
-                        transform: skewX(0deg);
-                        margin-left: 0px;
-                        opacity: 0.8;
-                        background-image: linear-gradient(360deg, rgb(65, 75, 206), transparent);
-                    }
-    
-                    &:active {
-                        background: rgb(65, 75, 206)
-                    }
+                button { @include button (228px, 43px);
                 }
 
             }
@@ -329,34 +289,229 @@ main {
     }
 
     .other-trips{
-        border: solid 1px red;
-        height: 850px;
+        height: 730px;
 
-        .trip-name-1 { @include tripbox (1532px);
+        .trip-name-1 { @include tripbox (1530px);
             
-            .text-trip-name-1 { @include triptext (1532px)}
+            .text-trip-name-1 { @include triptext (1530px)}
         }
 
-        .trip-name-2 { @include tripbox (1671px);
+        .trip-name-2 { @include tripbox (1667px);
             
-            .text-trip-name-2 { @include triptext (1671px);}
+            .text-trip-name-2 { @include triptext (1667px);}
         }
 
-        .trip-name-4 { @include tripbox (1949px);
+        .trip-name-3 { @include tripbox (1804px);
             
-            .text-trip-name-4 { @include triptext (1949px);}
+            .text-trip-name-3 { @include triptext (1804px);}
         }
 
-        .trip-name-5 { @include tripbox (2088px);
+        .trip-name-4 { @include tripbox (1940px);
             
-            .text-trip-name-5 { @include triptext (2088px);}
+            .text-trip-name-4 { @include triptext (1940px);}
         }
 
-        .trip-name-6 { @include tripbox (2227px);
+        .trip-name-5 { @include tripbox (2078px);
             
-            .text-trip-name-6 { @include triptext (2227px);}
+            .text-trip-name-5 { @include triptext (2078px);}
+        }
+    }
+}
+
+section {
+    .explore-trips {
+        padding-left: 20px;
+        height: 400px;
+
+        h2 {
+            @include headerh2;
         }
 
+        div > .card1 > img {
+            @include pricecard;
+        }
+
+        div > .card1 > .cardtext > p {
+            @include ptext(#8a8a8a);
+        }
+
+        div > .card1 > .cardtext {
+            span {
+                @include pricetextcolor;
+            }
+        }
+    }
+    
+    .inta-section {
+        height: 500px;
+
+        h2 {
+            @include headerh2;
+            margin-left: 50px
+        }
+
+        button {
+            @include button (197px, 43px);
+            margin-top: 0px;
+            margin-left: 50px
+            
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 5px;
+            justify-content: center;
+            margin-top: 20px;
+
+            img {
+                height: 158px;
+                width: 158px;
+            }
+        }
+    }
+}
+
+footer {
+    border: solid red 1px;
+    height: 754px;
+    background-image: url(https://source.unsplash.com/random/search=?men-in-trek);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .footer-mask {
+        height: 754px;
+        opacity: 0.3;
+        background-color: #272f33;
     }
 
+    .moto3 {
+        padding-left: 30px;
+        margin-top: 45px;
+        position: absolute;
+        display: flex;
+        top: 3149px;
+        flex-direction: column;
+
+        .moto-1 {
+            @include motocard;
+        }
+
+        .moto-2 {
+            @include motocard;
+        }
+
+        .moto-3 {
+            @include motocard;
+        }
+
+        hr {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-right: 30px;
+        }
+    }
+
+    .subscription {
+        position: absolute;
+        top: 3482px;
+
+        h3 {
+            @include texth3(320px, 54px, 23px, 1.17);
+            padding-left: 30px;
+        }
+
+        form {
+            display: flex;
+            padding-left: 30px;
+            padding-right: 15px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        form > input {
+            height: 50px;
+            background: none;
+            border: none;
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        form > button {
+            background: none;
+            border: none;
+            color: #fff;
+        }
+
+        hr {
+            padding-top: 0px;
+            padding-bottom: 10px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-right: 10px;
+            margin-left: 30px;
+        }
+    }
+
+    .usefull-list {
+        top: 3621px;
+        position: absolute;
+        padding-left: 30px;
+        ul {
+            padding: 15px 0px;
+            font-family: Chivo;
+            font-size: 13px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2.5px;
+            color: #fff;
+
+            li {
+                list-style: none;
+            }
+        }
+
+        hr {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-right: -225px;
+            margin-left: 0px;
+        }
+    }
+
+    .social-copyright {
+        position: absolute;
+        top: 3800px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img {
+                padding-right: 30px;
+                padding-bottom: 40px;
+            }
+        }
+
+        p c{
+            width: 254px;
+            height: 14px;
+            margin: 24px 0 0;
+            opacity: 0.5;
+            font-family: Chivo;
+            font-size: 12px;
+            color: #fff;
+        }
+    }
 }
