@@ -1,0 +1,51 @@
+@mixin tripbox ($top) {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px red;
+    height: 132px;
+
+    a > img {
+        width: 100%;
+        height: 132px;
+    }
+
+    .mask-trips {
+        margin-right: 15px;
+        top: $top;
+        width: -webkit-fill-available;
+        height: 66px;
+        background-image: linear-gradient(360deg, black, transparent);
+        position: absolute;
+    }
+}
+
+@mixin triptext ($triptexttop) {
+    top: $triptexttop;
+    position: absolute;
+    margin-left: 20px;
+
+    h3 {
+        width: 42px;
+        height: 15px;
+        margin: 0 78px 0 0;
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #fff;
+    }
+
+    h2 {
+        width: 120px;
+        height: 30px;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: italic;
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+        color: #fff;
+    }
+}

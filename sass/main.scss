@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Chivo, sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import 'mixins';
 
 $whitetxt : #fff;
 
@@ -16,6 +18,7 @@ $whitetxt : #fff;
     align-items: center;
 
     .banner-contant {
+        padding-top: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -27,7 +30,7 @@ $whitetxt : #fff;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        line-height: normal;    
+        line-height: 7px;  
 
         .banner-text {
             display: flex;
@@ -67,6 +70,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 5px;
 
     nav {
         img {
@@ -78,6 +82,281 @@ header {
         img {
             margin-right: 30px;
         }
+    }
+
+}
+
+main {
+    .landing-page {
+        width: auto;
+        height: 320px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask-text {
+            width: -webkit-fill-available;
+            height: 262px;
+            opacity: 0.8;
+            top: 156px;
+            background-image: linear-gradient(360deg, black, transparent);
+            position: absolute;
+
+        }
+
+        .text-btn {
+            position: absolute;
+            padding-top: 144px;
+            padding-left: 20px;
+            top: 156px;
+
+            p {
+                width: 76px;
+                height: 15px;
+                font-family: Chivo, sans-serif;
+                font-size: 13px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 2.5px;
+                color: #fff;
+            }
+
+            h4 {
+                width: 280px;
+                height: 40px;
+                margin: 0px 0 11px;
+                font-family: Roboto, sans-serif;
+                font-size: 40px;
+                font-weight: bold;
+                font-stretch: condensed;
+                font-style: italic;
+                line-height: 1;
+                letter-spacing: 0.67px;
+                color: #fff;
+            }
+
+            button {
+                width: 264px;
+                height: 43px;
+                color: #fff;
+                background: none;
+                border: solid 2px #fff;
+                transform: skewX(339deg);
+                margin-left: 10px;
+
+                &:hover {
+                    transform: skewX(0deg);
+                    margin-left: 0px;
+                    opacity: 0.8;
+                    background-image: linear-gradient(360deg, white, transparent);
+                }
+
+                &:active {
+                    background: rgb(65, 75, 206)
+                }
+
+                span {
+                    width: 128px;
+                    height: 15px;
+                    font-family: Chivo;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+            }
+        }
+    
+    }
+
+    .landing-slider {
+        margin-top: 5px;
+        width: 100%;
+        height: 221px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mask-slider {
+            top: 535px;
+            width: -webkit-fill-available;
+            height: 111px;
+            background-image: linear-gradient(360deg, black, transparent);
+            position: absolute;
+        }
+
+        .text-slider {
+            top: 580px;
+            position: absolute;
+
+            P {
+                width: 77px;
+                height: 15px;
+                margin-left: 20px;
+                font-family: Chivo;
+                font-size: 13px;
+                font-weight: bold;
+                letter-spacing: 2.5px;
+                color: #fff;
+
+            }
+
+            h4 {
+                margin-left: 20px;
+                width: 280px;
+                height: 30px;
+                font-family: Roboto;
+                font-size: 26px;
+                font-weight: bold;
+                font-stretch: condensed;
+                font-style: italic;
+                line-height: 1.15;
+                letter-spacing: 0.5px;
+                color: #fff;
+            }
+
+        }
+    }
+
+    .product {
+        height: 700px;
+        margin-top: 5px;
+        padding: 55px 20px;
+
+        h2 {
+            margin: 20px 0px 20px 0px;
+            transform: rotate(0deg);
+            font-family: Roboto, sans-serif;
+            font-size: 26px;
+            font-weight: bold;
+            font-stretch: condensed;
+            font-style: italic;
+            line-height: 1.15;
+            letter-spacing: 0.5px;
+            color: #2736dd;
+        }
+
+        img {
+            height: 210px;
+            width: 100%;
+        }
+
+        .product-detail {
+            p {
+                padding-top: 20px;
+                font-size: 13px;
+                font-weight: bold;
+                letter-spacing: 2.5px;
+                color: #2736dd;
+            }
+
+            h3 {
+                font-family: Roboto, sans-serif;
+                font-size: 26px;
+                font-weight: bold;
+                font-stretch: condensed;
+                font-style: italic;
+                line-height: 1.15;
+                color: #272f33;
+                padding-bottom: 10px;
+            }
+
+            .product-price-detail {
+                div {
+                    display: flex;
+
+                    img {
+                        width: 96px;
+                        height: 17px
+                    }
+
+                    p {
+                        padding-top: 0px;
+                        padding-left: 20px;
+                        font-size: 13px;
+                        font-weight: bold;
+                        letter-spacing: 2.5px;
+                        color: #2736dd;
+
+                        del {
+                            color: #8d9294;
+                        }
+                    }
+                }
+                
+                p {
+                    font-family: Chivo ,sans-serif;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.43;
+                    letter-spacing: normal;
+                    color: #272f33;
+                }
+
+                button {
+                    margin-top: 30px;
+                    width: 228px;
+                    height: 43px;
+                    color: #2736dd;
+                    background: none;
+                    border: solid 2px #2736dd;;
+                    transform: skewX(339deg);
+                    margin-left: 10px;
+
+                    &:hover {
+                        color: #fff;
+                        transform: skewX(0deg);
+                        margin-left: 0px;
+                        opacity: 0.8;
+                        background-image: linear-gradient(360deg, rgb(65, 75, 206), transparent);
+                    }
+    
+                    &:active {
+                        background: rgb(65, 75, 206)
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .other-trips{
+        border: solid 1px red;
+        height: 850px;
+
+        .trip-name-1 { @include tripbox (1532px);
+            
+            .text-trip-name-1 { @include triptext (1532px)}
+        }
+
+        .trip-name-2 { @include tripbox (1671px);
+            
+            .text-trip-name-2 { @include triptext (1671px);}
+        }
+
+        .trip-name-4 { @include tripbox (1949px);
+            
+            .text-trip-name-4 { @include triptext (1949px);}
+        }
+
+        .trip-name-5 { @include tripbox (2088px);
+            
+            .text-trip-name-5 { @include triptext (2088px);}
+        }
+
+        .trip-name-6 { @include tripbox (2227px);
+            
+            .text-trip-name-6 { @include triptext (2227px);}
+        }
+
     }
 
 }

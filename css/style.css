@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: Chivo, sans-serif; }
 
 .banner {
   width: 100%;
@@ -11,6 +11,7 @@
   display: flex;
   align-items: center; }
   .banner .banner-contant {
+    padding-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,7 @@
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal; }
+    line-height: 7px; }
     .banner .banner-contant .banner-text {
       display: flex;
       color: #fff;
@@ -47,8 +48,388 @@ header {
   background-color: #efefef;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding-top: 5px; }
   header nav img {
     margin-left: 30px; }
   header .checkout-cart img {
     margin-right: 30px; }
+
+main .landing-page {
+  width: auto;
+  height: 320px; }
+  main .landing-page img {
+    width: 100%;
+    height: 100%; }
+  main .landing-page .mask-text {
+    width: -webkit-fill-available;
+    height: 262px;
+    opacity: 0.8;
+    top: 156px;
+    background-image: linear-gradient(360deg, black, transparent);
+    position: absolute; }
+  main .landing-page .text-btn {
+    position: absolute;
+    padding-top: 144px;
+    padding-left: 20px;
+    top: 156px; }
+    main .landing-page .text-btn p {
+      width: 76px;
+      height: 15px;
+      font-family: Chivo, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 2.5px;
+      color: #fff; }
+    main .landing-page .text-btn h4 {
+      width: 280px;
+      height: 40px;
+      margin: 0px 0 11px;
+      font-family: Roboto, sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      font-stretch: condensed;
+      font-style: italic;
+      line-height: 1;
+      letter-spacing: 0.67px;
+      color: #fff; }
+    main .landing-page .text-btn button {
+      width: 264px;
+      height: 43px;
+      color: #fff;
+      background: none;
+      border: solid 2px #fff;
+      transform: skewX(339deg);
+      margin-left: 10px; }
+      main .landing-page .text-btn button:hover {
+        transform: skewX(0deg);
+        margin-left: 0px;
+        opacity: 0.8;
+        background-image: linear-gradient(360deg, white, transparent); }
+      main .landing-page .text-btn button:active {
+        background: #414bce; }
+      main .landing-page .text-btn button span {
+        width: 128px;
+        height: 15px;
+        font-family: Chivo;
+        font-size: 13px;
+        font-weight: bold; }
+
+main .landing-slider {
+  margin-top: 5px;
+  width: 100%;
+  height: 221px; }
+  main .landing-slider img {
+    width: 100%;
+    height: 100%; }
+  main .landing-slider .mask-slider {
+    top: 535px;
+    width: -webkit-fill-available;
+    height: 111px;
+    background-image: linear-gradient(360deg, black, transparent);
+    position: absolute; }
+  main .landing-slider .text-slider {
+    top: 580px;
+    position: absolute; }
+    main .landing-slider .text-slider P {
+      width: 77px;
+      height: 15px;
+      margin-left: 20px;
+      font-family: Chivo;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2.5px;
+      color: #fff; }
+    main .landing-slider .text-slider h4 {
+      margin-left: 20px;
+      width: 280px;
+      height: 30px;
+      font-family: Roboto;
+      font-size: 26px;
+      font-weight: bold;
+      font-stretch: condensed;
+      font-style: italic;
+      line-height: 1.15;
+      letter-spacing: 0.5px;
+      color: #fff; }
+
+main .product {
+  height: 700px;
+  margin-top: 5px;
+  padding: 55px 20px; }
+  main .product h2 {
+    margin: 20px 0px 20px 0px;
+    transform: rotate(0deg);
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: 1.15;
+    letter-spacing: 0.5px;
+    color: #2736dd; }
+  main .product img {
+    height: 210px;
+    width: 100%; }
+  main .product .product-detail p {
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: #2736dd; }
+  main .product .product-detail h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: 1.15;
+    color: #272f33;
+    padding-bottom: 10px; }
+  main .product .product-detail .product-price-detail div {
+    display: flex; }
+    main .product .product-detail .product-price-detail div img {
+      width: 96px;
+      height: 17px; }
+    main .product .product-detail .product-price-detail div p {
+      padding-top: 0px;
+      padding-left: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2.5px;
+      color: #2736dd; }
+      main .product .product-detail .product-price-detail div p del {
+        color: #8d9294; }
+  main .product .product-detail .product-price-detail p {
+    font-family: Chivo ,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #272f33; }
+  main .product .product-detail .product-price-detail button {
+    margin-top: 30px;
+    width: 228px;
+    height: 43px;
+    color: #2736dd;
+    background: none;
+    border: solid 2px #2736dd;
+    transform: skewX(339deg);
+    margin-left: 10px; }
+    main .product .product-detail .product-price-detail button:hover {
+      color: #fff;
+      transform: skewX(0deg);
+      margin-left: 0px;
+      opacity: 0.8;
+      background-image: linear-gradient(360deg, #414bce, transparent); }
+    main .product .product-detail .product-price-detail button:active {
+      background: #414bce; }
+
+main .other-trips {
+  border: solid 1px red;
+  height: 850px; }
+  main .other-trips .trip-name-1 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px red;
+    height: 132px; }
+    main .other-trips .trip-name-1 a > img {
+      width: 100%;
+      height: 132px; }
+    main .other-trips .trip-name-1 .mask-trips {
+      margin-right: 15px;
+      top: 1532px;
+      width: -webkit-fill-available;
+      height: 66px;
+      background-image: linear-gradient(360deg, black, transparent);
+      position: absolute; }
+    main .other-trips .trip-name-1 .text-trip-name-1 {
+      top: 1532px;
+      position: absolute;
+      margin-left: 20px; }
+      main .other-trips .trip-name-1 .text-trip-name-1 h3 {
+        width: 42px;
+        height: 15px;
+        margin: 0 78px 0 0;
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #fff; }
+      main .other-trips .trip-name-1 .text-trip-name-1 h2 {
+        width: 120px;
+        height: 30px;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: italic;
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+        color: #fff; }
+  main .other-trips .trip-name-2 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px red;
+    height: 132px; }
+    main .other-trips .trip-name-2 a > img {
+      width: 100%;
+      height: 132px; }
+    main .other-trips .trip-name-2 .mask-trips {
+      margin-right: 15px;
+      top: 1671px;
+      width: -webkit-fill-available;
+      height: 66px;
+      background-image: linear-gradient(360deg, black, transparent);
+      position: absolute; }
+    main .other-trips .trip-name-2 .text-trip-name-2 {
+      top: 1671px;
+      position: absolute;
+      margin-left: 20px; }
+      main .other-trips .trip-name-2 .text-trip-name-2 h3 {
+        width: 42px;
+        height: 15px;
+        margin: 0 78px 0 0;
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #fff; }
+      main .other-trips .trip-name-2 .text-trip-name-2 h2 {
+        width: 120px;
+        height: 30px;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: italic;
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+        color: #fff; }
+  main .other-trips .trip-name-4 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px red;
+    height: 132px; }
+    main .other-trips .trip-name-4 a > img {
+      width: 100%;
+      height: 132px; }
+    main .other-trips .trip-name-4 .mask-trips {
+      margin-right: 15px;
+      top: 1949px;
+      width: -webkit-fill-available;
+      height: 66px;
+      background-image: linear-gradient(360deg, black, transparent);
+      position: absolute; }
+    main .other-trips .trip-name-4 .text-trip-name-4 {
+      top: 1949px;
+      position: absolute;
+      margin-left: 20px; }
+      main .other-trips .trip-name-4 .text-trip-name-4 h3 {
+        width: 42px;
+        height: 15px;
+        margin: 0 78px 0 0;
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #fff; }
+      main .other-trips .trip-name-4 .text-trip-name-4 h2 {
+        width: 120px;
+        height: 30px;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: italic;
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+        color: #fff; }
+  main .other-trips .trip-name-5 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px red;
+    height: 132px; }
+    main .other-trips .trip-name-5 a > img {
+      width: 100%;
+      height: 132px; }
+    main .other-trips .trip-name-5 .mask-trips {
+      margin-right: 15px;
+      top: 2088px;
+      width: -webkit-fill-available;
+      height: 66px;
+      background-image: linear-gradient(360deg, black, transparent);
+      position: absolute; }
+    main .other-trips .trip-name-5 .text-trip-name-5 {
+      top: 2088px;
+      position: absolute;
+      margin-left: 20px; }
+      main .other-trips .trip-name-5 .text-trip-name-5 h3 {
+        width: 42px;
+        height: 15px;
+        margin: 0 78px 0 0;
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #fff; }
+      main .other-trips .trip-name-5 .text-trip-name-5 h2 {
+        width: 120px;
+        height: 30px;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: italic;
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+        color: #fff; }
+  main .other-trips .trip-name-6 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px red;
+    height: 132px; }
+    main .other-trips .trip-name-6 a > img {
+      width: 100%;
+      height: 132px; }
+    main .other-trips .trip-name-6 .mask-trips {
+      margin-right: 15px;
+      top: 2227px;
+      width: -webkit-fill-available;
+      height: 66px;
+      background-image: linear-gradient(360deg, black, transparent);
+      position: absolute; }
+    main .other-trips .trip-name-6 .text-trip-name-6 {
+      top: 2227px;
+      position: absolute;
+      margin-left: 20px; }
+      main .other-trips .trip-name-6 .text-trip-name-6 h3 {
+        width: 42px;
+        height: 15px;
+        margin: 0 78px 0 0;
+        font-family: Chivo ,sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+        color: #fff; }
+      main .other-trips .trip-name-6 .text-trip-name-6 h2 {
+        width: 120px;
+        height: 30px;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: bold;
+        font-stretch: condensed;
+        font-style: italic;
+        line-height: 1.15;
+        letter-spacing: 0.5px;
+        color: #fff; }
