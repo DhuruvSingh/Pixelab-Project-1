@@ -27,6 +27,7 @@ $whitetxt : #fff;
         line-height: 9px;
         font-family: Chivo, sans-serif;
         font-size: 12px;
+        letter-spacing: 1.71px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -176,9 +177,9 @@ main {
         width: 100%;
         height: 221px;
 
-        img {
+        .landing-slider-1 > img {
             width: 100%;
-            height: 100%;
+            height: 221px;
         }
 
         .mask-slider {
@@ -516,6 +517,22 @@ footer {
     }
 }
 
+.banner-txt-desktop {
+    display: none;
+}
+
+header > nav > ul {
+    display: none;
+}
+
+.checkout-cart > a {
+    display: none;
+}
+
+.landing-slider > .landing-slider-2, .landing-slider-3 {
+    display: none;
+}
+
 @media only screen and (min-width: 1400px) {
     .banner {
         height: 27px;
@@ -528,10 +545,168 @@ footer {
             flex-direction: row;
 
             strong {
+                display: block;
                 font-size: 12px;
                 letter-spacing: 1.71px;
                 padding-right: 5px;
             }
         }
     }
-}
+
+    header {
+        height: 95px;
+        justify-content: flex-start;
+
+        .logo {
+            order: -1;
+            padding-left: 80px;
+            padding-right: 40px;
+
+            img {
+                width: 86px;
+                height: 84px;
+            }
+        }
+
+        nav {
+            padding-left: 60px;
+
+            img {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                
+                a {
+                    padding-right: 60px;
+                    font-family: Chivo;
+                    font-size: 13px;
+                    font-weight: bold;
+                    letter-spacing: 2.32px;
+                    text-align: center;
+                    color: #272f33;
+                    text-decoration: none;
+
+                    li {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+
+        .checkout-cart {
+            display: flex;
+            position: absolute;
+            float: right;
+            right: 80px;
+
+            .mob-cart {
+                display: none;
+            }
+        }
+         
+        .checkout-cart > a {
+            display: block;
+            padding-left: 40px;
+        }
+    }
+
+    main .landing-page {
+        width: 720px;
+        height: 500px;
+
+        .mask-text {
+            height: 360px;
+            width: 720px;
+            top: 274px;
+        }
+
+        .text-btn {
+            padding-top: 144px;
+            padding-left: 80px;
+            top: 356px;
+        }
+    }
+
+    main {
+        .landing-slider > .landing-slider-2, .landing-slider-3 {
+            display: block;
+        }
+
+        .landing-slider {
+            display: flex;
+            position: absolute;
+            width: 644px;
+            height: 500px;
+            top: 123px;
+            left: 727px;
+
+            .landing-slider-1, .landing-slider-2, .landing-slider-3 > img {
+                object-fit: cover;
+                width: 355px;
+                height: 245px;
+            }
+
+            .landing-slider-1 {
+                width: 355px;
+                height: 245px;
+            }
+
+            .landing-slider-2 > img {
+                width: 284px;
+                height: 245px;
+
+            }
+
+            .landing-slider-3 {
+                position: absolute;
+                top: 260px;
+                width: 644px;
+
+                img {
+                    width: 644px;
+                }
+
+                .mask-slider-3 {
+                    top: 135px;
+                    height: 110px;
+                    width: 644px;
+                    background-image: linear-gradient(360deg, black, transparent);
+                    position: absolute;
+                }
+            }
+
+            .landing-slider-2 {
+                position: absolute;
+                left: 360px;
+                width: 284px;
+            }
+        }
+
+        .product {
+            display: flex;
+            margin-top: 10px;
+            padding: 55px 80px;
+            border: solid red;
+
+            h2 {
+                // transform: rotate(-90deg);
+            }
+        }
+
+        
+    }
+    main .landing-slider .mask-slider-2 {
+        width: 284px;
+        height: 111px;
+        top: 135px;
+        background-image: linear-gradient(360deg, black, transparent);
+        position: absolute;
+    }
+    main .landing-slider .mask-slider {
+        top: 135px;
+        width: 355px;
+        height: 111px;
+    }
+}   
